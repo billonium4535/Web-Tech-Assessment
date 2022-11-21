@@ -1,5 +1,11 @@
 # Web-Tech-Assessment
 
+## Progress
+| Task | Try to Complete in | Current Status | To Do | 
+|------------|---------------|----------------|------------------------------------|
+| Links to other sites| Today | Working | Find Sites to link to<br>Add them to site |
+| Branding | Today | Up Next | Find what to brand<br>Add them to site |
+
 ## To Do:
 - 1.1
     - [x] Nav bar
