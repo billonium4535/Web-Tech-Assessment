@@ -3,8 +3,8 @@
 ## Progress
 | Task | Try to Complete in | Current Status | To Do | 
 |------------|---------------|----------------|------------------------------------|
-| Links to other sites| Today | Done |  |
-| Branding | Today | Working | Find what to brand<br>Add them to site |
+| Do CV (practical 2) | Today | Working | Practical 2 |
+| Weather Data | Tomorrow | Next Up | Finish code<br>Implement in final site |
 
 ## To Do:
 - 1.1
