@@ -3,13 +3,13 @@
 ## Progress
 | Task | Try to Complete in | Current Status | To Do | 
 |------------|---------------|----------------|------------------------------------|
-| Links to other sites| Today | Working | Find Sites to link to<br>Add them to site |
+| Links to other sites| Today | Done |  |
 | Branding | Today | Up Next | Find what to brand<br>Add them to site |
 
 ## To Do:
 - 1.1
     - [x] Nav bar
-    - [ ] Links to other sites
+    - [x] Links to other sites
     - [ ] Branding
     - [ ] Design homepage
     - [ ] Include links
