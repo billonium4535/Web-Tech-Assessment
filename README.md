@@ -4,7 +4,7 @@
 | Task | Try to Complete in | Current Status | To Do | 
 |------------|---------------|----------------|------------------------------------|
 | Links to other sites| Today | Done |  |
-| Branding | Today | Up Next | Find what to brand<br>Add them to site |
+| Branding | Today | Working | Find what to brand<br>Add them to site |
 
 ## To Do:
 - 1.1
