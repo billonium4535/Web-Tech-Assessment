@@ -1,2 +1,1 @@
-<link rel="stylesheet" href="../css/navbar.css">
-<link rel="stylesheet" href="../css/index_styles.css">
+<link rel="stylesheet" type="text/css"  href="../css/navbar.css">
