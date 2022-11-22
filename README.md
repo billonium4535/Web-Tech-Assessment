@@ -10,7 +10,7 @@
 - 1.1
     - [x] Nav bar
     - [x] Links to other sites
-    - [ ] Branding
+    - [x] Branding
     - [ ] Design homepage
     - [ ] Include links
     - [ ] Include sections
