@@ -2,22 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/index_styles.css">
+    <?php
+        include("./php/header-head.php");
+    ?>
     <title>Homepage</title>
 </head>
 <body>
-<ul>
-    <li><a class="active" href="index.html">Home</a></li>
-    <li><a href="html/cv.html">CV</a></li>
-    <li><a href="html/login.html">Login</a></li>
-    <li><a href="html/weather-data.html">Weather Data</a></li>
-</ul>
-<div id="currentTime" class="right">Current Time</div>
-<script src="js/date-time.js"></script>
-<p>
-    <?php echo "test";
-    ?>
-</p>
+<?php
+    include("./php/header.php");
+?>
 </body>
 </html>
