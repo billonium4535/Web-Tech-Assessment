@@ -11,10 +11,10 @@
     - [x] Nav bar
     - [x] Links to other sites
     - [x] Branding
-    - [ ] Design homepage
-    - [ ] Include links
-    - [ ] Include sections
-    - [ ] Brief information about components
+    - [x] Design homepage
+    - [x] Include links
+    - [x] Include sections
+    - [x] Brief information about components
 - 1.2
     - 1.2.1 (cv)
         - [ ] Do and include practical 2

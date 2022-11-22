@@ -1,6 +1,6 @@
 const element = document.getElementById('currentTime');
 
 setInterval(function () {
-    const currentDate = new Date();
-    element.innerText = "Current Time: " + currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+    const date = new Date();
+    element.innerText = "Current Time: " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 }, 1000);
