@@ -34,3 +34,12 @@
         - [ ] Display one record
 - 2.1
     - [ ] Tech Report
+
+Notes:<br>
+Working on weather data.<br>
+Can't get chart to change with select box.<br>
+add 2 more graphs for humidity and wind.<br>
+Visualise 5-day forecast.<br>
+Change type of graph through html dropdown.<br>
+Look into "update()" to change chart.<br>
+Customise the appearance of the chart for task 3.
