@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Titillium;
+    src: url("../fonts/TitilliumWeb-Regular.ttf");
+}
+
+body {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: left;
+    color: #f3f0d1
+}
+
+h1 {
+    font-family: Titillium, serif;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 9px;
+}
+
+.imgAnim {
+    border-radius: 8px;
+    border-color: red;
+    border-style: solid;
+    border-width: 2px;
+    animation-name: profileBackgroundFade;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes profileBackgroundFade {
+    0% {
+        border-color: red;
+    }
+    25% {
+        border-color: limegreen;
+    }
+    50% {
+        border-color: deepskyblue;
+    }
+    75% {
+        border-color: yellow;
+    }
+    100% {
+        border-color: red;
+    }
+}
+
+.infoBoxes {
+    border-radius: 15px 50px 30px 50px;
+    background: #1c4a2a;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    padding: 20px;
+    width: 250px;
+    height: 200px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    font-size: 9px;
+    color: darkcyan;
+}
+
+.infoBoxes:hover {
+    border-color: limegreen;
+    border-radius: 50px 15px 50px 30px;
+    width: 450px;
+    height: 350px;
+    font-size: 18px;
+    color: #f3f0d1;
+}

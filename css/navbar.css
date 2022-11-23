@@ -41,3 +41,9 @@ body {
     text-align: center;
     font-size: 13px;
 }
+
+.split {
+    float:left;
+    width:75%;
+    padding-left: 10px;
+}
