@@ -3,7 +3,7 @@
 ## Progress
 | Task | Try to Complete in | Current Status | To Do | 
 |------------|---------------|----------------|------------------------------------|
-| Do CV (practical 2) | Today | Working | Practical 2 |
+| Extend CV "creative" | Tomorrow | Next Up | Add more features |
 | Weather Data | Tomorrow | Next Up | Finish code<br>Implement in final site |
 
 ## To Do:
@@ -17,7 +17,8 @@
     - [x] Brief information about components
 - 1.2
     - 1.2.1 (cv)
-        - [ ] Do and include practical 2
+        - [x] Do and include practical 2
+        - [ ] Add more features
     - 1.2.2 (Weather data)
         - [ ] Do and include practical 4, task 2
         - [ ] Do and include practical 4, task 3
