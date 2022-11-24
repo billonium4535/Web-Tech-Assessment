@@ -36,6 +36,7 @@
     - [ ] Tech Report
 
 Notes:<br>
+CV box 4 doesn't work.<br>
 Working on weather data.<br>
 Can't get chart to change with select box.<br>
 add 2 more graphs for humidity and wind.<br>
