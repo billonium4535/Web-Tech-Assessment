@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--Import javascript files-->
 <script src="../js/dailyweatherdata.js"></script>
 <script src="../js/weatherforecast.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"
@@ -8,31 +10,57 @@
 <script src="../js/weather-data.js"></script>
 <head>
     <meta charset="UTF-8">
+
+    <!-- Import css for formatting and php for the header -->
     <link rel="stylesheet" type="text/css" href="../css/weather-data_styles.css">
     <?php
         include("../php/header-head.php");
     ?>
     <title>Weather Data</title>
 </head>
+
+<!-- Loads the displayGraph function when the webpage loads -->
 <body onload="displayGraph()">
+
+<!-- Loads the header onto the page from the php file -->
 <?php
     include("../php/header.php");
 ?>
 
 <br>
 
+<!-- Displaying graphs -->
 <div style="display:inline-block;vertical-align:top;">
     <p class="chartContainer">
-        <label for="selectCity"></label>
-        <select id="selectCity" onchange="displayGraph()">
-            <option value="stoke" selected>Stoke-On-Trent</option>
-            <option value="london">London</option>
-        </select>
-
-        <p.style1>Longitude: </p.style1><label id="lon"></label>
-        <canvas id="myChart"></canvas>
+        <canvas id="temperatureChart"></canvas>
+<!--        <p.style1>Longitude: </p.style1><label id="lon"></label>-->
+    </p>
+    <p class="chartContainer">
+        <canvas id="windChart"></canvas>
+    </p>
+    <p class="chartContainer">
+        <canvas id="humidityChart"></canvas>
     </p>
 </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 <?php
     include("../php/footer.php");

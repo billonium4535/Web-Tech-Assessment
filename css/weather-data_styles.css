@@ -1,9 +1,9 @@
 .chartContainer {
     border-radius: 8px;
-    background: #f3f0d1;
+    background: #ffffff;
     margin-top: 10px;
     margin-left: 10px;
-    border-color: #f3f0d1;
+    border-color: purple;
     border-style: solid;
     border-width: 3px;
 }
