@@ -42,6 +42,17 @@ body {
     font-size: 13px;
 }
 
+.footerRel {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #2c3148;
+    color: #f3f0d1;
+    text-align: center;
+    font-size: 13px;
+}
+
 .split {
     float:left;
     width:75%;
