@@ -14,7 +14,7 @@
     ?>
     <title>Weather Data</title>
 </head>
-<body onload="changeCity()">
+<body onload="displayGraph()">
 <?php
     include("../php/header.php");
 ?>
@@ -24,7 +24,7 @@
 <div style="display:inline-block;vertical-align:top;">
     <p class="chartContainer">
         <label for="selectCity"></label>
-        <select id="selectCity" onchange="changeCity()">
+        <select id="selectCity" onchange="displayGraph()">
             <option value="stoke" selected>Stoke-On-Trent</option>
             <option value="london">London</option>
         </select>
