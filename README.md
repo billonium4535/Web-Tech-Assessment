@@ -20,11 +20,11 @@
         - [x] Do and include practical 2
         - [ ] Add more features
     - 1.2.2 (Weather data)
-        - [ ] Do and include practical 4, task 2
-        - [ ] Do and include practical 4, task 3
+        - [x] Do and include practical 4, task 2
+        - [x] Do and include practical 4, task 3
     - 1.2.3 (Login system)
-        - [ ] Do and include practical 6
-        - [ ] Don't include functionality for new admins
+        - [x] Do and include practical 6
+        - [x] Don't include functionality for new admins
 - 1.3
     - 1.3.1 (submit.php)
         - [ ] Only accessible by admins via login
@@ -34,11 +34,3 @@
         - [ ] Display one record
 - 2.1
     - [ ] Tech Report
-
-Notes:<br>
-Working on weather data.<br>
-add 2 more graphs for humidity and wind.<br>
-Visualise 5-day forecast.<br>
-Change type of graph through html dropdown.<br>
-Look into "update()" to change chart.<br>
-Customise the appearance of the chart for task 3.
