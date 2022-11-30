@@ -14,7 +14,11 @@ set_error_handler("loggedOut");
     <li><a href="../html/weather-data.html" style="color: #f3f0d1">Weather Data</a></li>
     <?php if(!isset($_SESSION['loggedIn']) || empty($_SESSION['loggedIn'])){
         ?><li></li><?php
-    } else { ?><li><a href="../php/submit.php" style="color: #f3f0d1">Submit</a></li><?php
+    } else { ?>
+        <li><a href="../php/submit.php" style="color: #f3f0d1">Submit</a></li>
+        <li><a href="../php/list.php" style="color: #f3f0d1">List</a></li>
+        <li><a href="../php/display.php" style="color: #f3f0d1">Display</a></li>
+        <?php
     } ?>
 </ul>
 <div id="currentTime" class="right" style="color: #f3f0d1">Time Loading...</div>
