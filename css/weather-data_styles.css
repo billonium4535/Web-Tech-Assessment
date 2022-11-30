@@ -17,3 +17,17 @@ canvas {
 p.style1 {
     font-size: 9px;
 }
+
+body {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: left;
+    color: #f3f0d1
+}
+
+h1 {
+    font-family: Titillium, serif;
+    font-size: 30px;
+}

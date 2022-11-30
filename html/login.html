@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/login_styles.css">
     <?php
         include("../php/header-head.php");
     ?>
@@ -12,17 +13,22 @@
     include("../php/header.php");
 ?>
 
+<h1>Login - Currently <?php echo $_SESSION['username'];?> Logged In</h1>
+
+<hr>
+<br>
+
 <form action="../php/login.php" method="POST">
-    Username:
+    <div class="loginText">Username:</div>
     <label>
         <input type="text" name="username">
     </label>
     <br>
-    Password:
+    <div class="loginText">Password:</div>
     <label>
         <input type="password" name="password">
     </label>
-    <br>
+    <br><br>
     <input type="submit">
 </form>
 
