@@ -3,8 +3,7 @@
 ## Progress
 | Task               | Try to Complete in | Current Status | To Do          |
 |--------------------|--------------------|----------------|----------------|
-| Finish list.php    | Today              | Doing          | Do it          |
-| Finish display.php | Today              | Next up        | Do it          |
+| Finish display.php | Today              | Doing          | Do it          |
 
 ## To Do:
 - 1.1
@@ -29,7 +28,7 @@
     - 1.3.1 (submit.php)
         - [x] Only accessible by admins via login
     - 1.3.2 (list.php)
-        - [ ] List the records
+        - [x] List the records
     - 1.3.3 (display.php)
         - [ ] Display one record
 - 2.1

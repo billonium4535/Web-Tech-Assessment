@@ -23,11 +23,25 @@ h2 {
     padding-left: 10px;
 }
 
-.inputForm {
+.paddedDiv {
     padding-left: 10px;
 }
 
 .error {
     color: #FF0000;
     font-size: 12px;
+}
+
+table {
+    width: 75%;
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 2px solid purple;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
 }
