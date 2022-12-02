@@ -1,10 +1,12 @@
 # Web-Tech-Assessment
 
 ## Progress
-| Task | Try to Complete in | Current Status | To Do | 
-|------------|---------------|----------------|------------------------------------|
-| Extend CV "creative" | Tomorrow | Next Up | Add more features |
-| Weather Data | Tomorrow | Next Up | Finish code<br>Implement in final site |
+| Task               | Try to Complete in | Current Status | To Do          |
+|--------------------|--------------------|----------------|----------------|
+| Fix footer         | Now                | Doing          | Fix formatting |
+| Finish submit.php  | Today              | Doing          | Do it          |
+| Finish list.php    | Today              | Next Up        | Do it          |
+| Finish display.php | Today              | Next up        | Do it          |
 
 ## To Do:
 - 1.1
