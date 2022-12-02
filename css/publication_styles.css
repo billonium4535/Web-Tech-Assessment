@@ -16,3 +16,18 @@ h1 {
     font-family: Titillium, serif;
     font-size: 30px;
 }
+
+h2 {
+    font-family: Titillium, serif;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.inputForm {
+    padding-left: 10px;
+}
+
+.error {
+    color: #FF0000;
+    font-size: 12px;
+}

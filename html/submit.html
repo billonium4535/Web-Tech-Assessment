@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/publication_styles.css">
+    <?php
+        include("../php/header-head.php");
+    ?>
+    <title>Submit</title>
+</head>
+<body>
+<?php
+    include("../php/header.php");
+    include("../php/submit.php");
+?>
+
+<h1>Submit New Publication Details</h1>
+
+<hr>
+<br>
+
+<h2>Submit Form:</h2>
+
+<div class="inputForm">
+    <form method="post" action='?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>'>
+        <p><span class="error">*All Fields Required</span></p>
+        Title: <label>
+        <br>
+            <input type="text" name="name" value="<?php echo $name;?>">
+            <span class="error">* <?php echo $nameErr;?></span>
+        </label><br><br>
+        Authors: <label>
+        <br>
+            <input type="text" name="authors" value="<?php echo $authors;?>">
+            <span class="error">* <?php echo $authorsErr;?></span>
+        </label><br><br>
+        Year: <label>
+        <br>
+            <input type="text" name="year" value="<?php echo $year;?>">
+            <span class="error">* <?php echo $yearErr;?></span>
+        </label><br><br>
+        Journal: <label>
+        <br>
+            <input type="text" name="journal" value="<?php echo $journal;?>">
+            <span class="error">* <?php echo $journalErr;?></span>
+        </label><br><br>
+        Digital Object Identifier (DOI): <label>
+        <br>
+            <input type="text" name="doi" value="<?php echo $doi;?>">
+            <span class="error">* <?php echo $doiErr;?></span>
+        </label><br><br>
+        School Name: <label>
+        <br>
+            <input type="text" name="schoolName" value="<?php echo $schoolName;?>">
+            <span class="error">* <?php echo $schoolNameErr;?></span>
+        </label><br><br><br>
+
+        <input type="submit">
+    </form>
+    <br>
+    <?php
+    echo $userOutput;
+    ?>
+</div>
+
+<div class="footerRel">
+    <p style="text-align: right; padding-right: 10px">Contact:<br>
+        Email: someone@example.com<br>
+        Phone: +44 1632 960550<br>
+        <!--        Fax: +44-208-1234567<br>-->
+        <!--        BBM Pin: 7AFC1E30<br>-->
+        <!--        Latitude: +34.5597880943659<br>-->
+        <!--        Longitude: +69.21103477189384<br>-->
+        <!--        Skype: love.xampp-->
+    </p>
+    <p>2022 ©</p>
+</div>
+
+</body>
+</html>
