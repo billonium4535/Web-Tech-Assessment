@@ -3,9 +3,7 @@
 ## Progress
 | Task               | Try to Complete in | Current Status | To Do          |
 |--------------------|--------------------|----------------|----------------|
-| Fix footer         | Now                | Doing          | Fix formatting |
-| Finish submit.php  | Today              | Doing          | Do it          |
-| Finish list.php    | Today              | Next Up        | Do it          |
+| Finish list.php    | Today              | Doing          | Do it          |
 | Finish display.php | Today              | Next up        | Do it          |
 
 ## To Do:
@@ -29,14 +27,10 @@
         - [x] Don't include functionality for new admins
 - 1.3
     - 1.3.1 (submit.php)
-        - [ ] Only accessible by admins via login
+        - [x] Only accessible by admins via login
     - 1.3.2 (list.php)
         - [ ] List the records
     - 1.3.3 (display.php)
         - [ ] Display one record
 - 2.1
     - [ ] Tech Report
-
-
-## Notes:
-- Retard proof form
