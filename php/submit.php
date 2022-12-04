@@ -6,6 +6,12 @@ $userOutput = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $data = [];
+    $lastIDArray = [];
+
+    $file = file("../csv/publications.csv");
+    $rawFileData = (string) ($file[count($file)-1]);
+    $lastIDArray = explode(",", $rawFileData);
+    $data[0] = ((int) $lastIDArray[0]) + 1;
 
     if (empty($_POST["name"])) {
         $nameErr = "Field is required";
@@ -14,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (!preg_match("/^[a-zA-Z-' ]*$/",$name)) {
             $nameErr = "Invalid name";
         } else {
-            $data[0] = $name;
+            $data[1] = $name;
         }
     }
 
@@ -25,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (!preg_match("/^[a-zA-Z-' ]*$/",$authors)) {
             $authorsErr = "Invalid name";
         } else {
-            $data[1] = $authors;
+            $data[2] = $authors;
         }
     }
 
@@ -36,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (!filter_var($year, FILTER_VALIDATE_INT, array("options" => array("min_range"=>1000, "max_range"=>date("Y"))))) {
             $yearErr = "Invalid year";
         } else {
-            $data[2] = $year;
+            $data[3] = $year;
         }
     }
 
@@ -47,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (!preg_match("/^[a-zA-Z-' ]*$/",$journal)) {
             $journalErr = "Invalid name";
         } else {
-            $data[3] = $journal;
+            $data[4] = $journal;
         }
     }
 
@@ -55,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $doiErr = "Field is required";
     } else {
         $doi = test_input($_POST["doi"]);
-        $data[4] = $doi;
+        $data[5] = $doi;
     }
 
     if (empty($_POST["schoolName"])) {
@@ -65,11 +71,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (!preg_match("/^[a-zA-Z-' ]*$/",$schoolName)) {
             $schoolNameErr = "Invalid name";
         } else {
-            $data[5] = $schoolName;
+            $data[6] = $schoolName;
         }
     }
 
-    if (count($data) == 6) {
+    if (count($data) == 7) {
         $f= fopen("../csv/publications.csv", "a");
         if ($f === false) {
             die("Error opening file");
@@ -78,6 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         fclose($f);
         $nameErr = $authorsErr = $yearErr = $journalErr = $doiErr = $schoolNameErr = "";
         $name = $authors = $year = $journal = $doi = $schoolName = "";
+        $data = [];
         $userOutput = "Your data has been submitted";
     } else {
         $userOutput = "Some of your values were invalid";
