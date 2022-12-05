@@ -23,17 +23,4 @@ if(isset($users[$u]) and $users[$u]['password'] == $p ) {
 }
 header("Location: ../html/login.html");
 
-//if($u=="admin" && $p=="password") {
-// $_SESSION['loggedIn']=TRUE; $_SESSION['username']="admin";
-// header("Location: ../html/login.html");
-// echo $_SESSION['username'];
-// }
-//elseif($u=="admin2" && $p=="password") {
-// $_SESSION['loggedIn']=TRUE; $_SESSION['username']="admin2";
-// header("Location: ../html/login.html");
-// echo $_SESSION['username'];
-// }
-//else{
-// header("Location: ../html/login.html");
-// }
 ?>
