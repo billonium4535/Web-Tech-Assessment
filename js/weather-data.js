@@ -1,19 +1,11 @@
-function displayGraph() {
-    /*var currentCity = document.getElementById("selectCity").value;
-    if (currentCity === "stoke") {
-        var daily = JSON.parse(dailydata_stoke);
-        var forecast = JSON.parse(forecast_stoke);
-    } else if (currentCity === "london") {
-        var daily = JSON.parse(dailydata_london);
-        var forecast = JSON.parse(forecast_london);
-    }
-    */
+// weather-data.js is used to get and display the weather data
 
+// A function to update the table with new publications
+function displayGraph() {
+
+    // Creates new variables to get the forcast
     var daily = JSON.parse(dailydata_stoke);
     var forecast = JSON.parse(forecast_stoke);
-
-    // Searches for the label "lon" and inserts the coordinates
-    // document.getElementById('lon').innerHTML = daily.coord.lon;
 
     // Reads in the dates from the js file and returns a list
     this.dateList = forecast.list.map(list => {
@@ -25,12 +17,12 @@ function displayGraph() {
         return list.main.temp;
     });
 
-
+    // Reads in the wind from the js file and returns a list
     this.windList = forecast.list.map(list => {
         return list.wind.speed;
     });
 
-
+    // Reads in the humitity from the js file and returns a list
     this.humidityList = forecast.list.map(list => {
         return list.main.humidity;
     });
@@ -52,6 +44,7 @@ function displayGraph() {
                 }
             ]
         },
+        // Sets the options of the graph
         options: {
             responsive: true,
             plugins: {
@@ -84,6 +77,7 @@ function displayGraph() {
                 }
             ]
         },
+        // Sets the options of the graph
         options: {
             responsive: true,
             plugins: {
@@ -116,6 +110,7 @@ function displayGraph() {
                 }
             ]
         },
+        // Sets the options of the graph
         options: {
             responsive: true,
             plugins: {

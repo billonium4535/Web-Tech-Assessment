@@ -1,3 +1,7 @@
+/* navbar.css is the style sheet for most of the site pages */
+/* It is called in header-head.php which is ran on most pages to keep the styling consistent */
+
+/* Creates and styles a class for lists */
 ul {
     list-style-type: none;
     margin: 0;
@@ -6,10 +10,12 @@ ul {
     background-color: #333;
 }
 
+/* Creates and styles a class for items in a list */
 li {
     float: left;
 }
 
+/* Sets the default style of items in the list */
 li a {
     display: block;
     color: white;
@@ -18,19 +24,24 @@ li a {
     text-decoration: none;
 }
 
+/* Changes the background when the user hovers the mouse over it */
 li a:hover:not(.active) {
     background-color: #111;
 }
 
+/* Creates and styles a class to align items to the right */
 .right {
     float: right;
     padding-right: 10px;
 }
 
+/* Sets styles for the body */
 body {
     background-color: #283739;
 }
 
+/* Creates and styles a class for the footer that is on every page */
+/* This is used when the footer needs to be fixed at the bottom of the page */
 .footer {
     position: fixed;
     left: 0;
@@ -42,6 +53,8 @@ body {
     font-size: 13px;
 }
 
+/* Creates and styles a class for the footer that is on every page */
+/* This is used when the footer needs to be fixed at the bottom of the content */
 .footerRel {
     position: relative;
     left: 0;
@@ -53,6 +66,7 @@ body {
     font-size: 13px;
 }
 
+/* Creates and styles a class to align items to 75% on the left */
 .split {
     float:left;
     width:75%;

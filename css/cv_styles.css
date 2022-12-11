@@ -1,8 +1,12 @@
+/* cv_styles.css is the style sheet for cv.html */
+
+/* Initialises the custom font */
 @font-face {
     font-family: Titillium;
     src: url("../fonts/TitilliumWeb-Regular.ttf");
 }
 
+/* Sets styles for the body */
 body {
     font-size: 15px;
     font-weight: bold;
@@ -12,15 +16,18 @@ body {
     color: #f3f0d1
 }
 
+/* Sets styles for h1 tag */
 h1 {
     font-family: Titillium, serif;
     font-size: 30px;
 }
 
+/* Sets styles for a new p.style1 tag */
 p.style1 {
     font-size: 9px;
 }
 
+/* Creates and styles a class for images */
 .imgAnim {
     border-radius: 8px;
     border-color: red;
@@ -32,6 +39,8 @@ p.style1 {
     animation-timing-function: linear;
 }
 
+/* Sets the keyframes for the image border animation */
+/* This fades between the 4 colors */
 @keyframes profileBackgroundFade {
     0% {
         border-color: red;
@@ -50,6 +59,7 @@ p.style1 {
     }
 }
 
+/* Creates and styles a class for infomation boxes */
 .infoBoxes {
     border-radius: 15px 50px 30px 50px;
     background: #1c4a2a;
@@ -65,6 +75,7 @@ p.style1 {
     color: darkcyan;
 }
 
+/* Sets what the information boxed do when the mouse is hovered over them */
 .infoBoxes:hover {
     border-color: limegreen;
     border-radius: 50px 15px 50px 30px;

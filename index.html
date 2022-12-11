@@ -1,7 +1,11 @@
+<!-- index.html is the homepage -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Import css for formatting and php for the header -->
     <link rel="stylesheet" type="text/css" href="./css/index_styles.css">
     <?php
         include("./php/header-head.php");
@@ -9,10 +13,13 @@
     <title>Homepage</title>
 </head>
 <body>
+
+<!-- Loads the header onto the page from the php file -->
 <?php
     include("./php/header.php");
 ?>
 
+<!-- Splits the page to not interfere with the content on the right -->
 <div class="split">
     <h1>CSC-20021 Web Technologies Assessment - 70%</h1>
     <p>
@@ -57,6 +64,7 @@
     </p>
 </div>
 
+<!-- Displays the footer from the php file -->
 <?php
     include("./php/footer.php");
 ?>

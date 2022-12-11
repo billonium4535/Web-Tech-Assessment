@@ -1,7 +1,11 @@
+<!-- login.html is a file that allows admins to login -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Import css for formatting and php for the header -->
     <link rel="stylesheet" type="text/css" href="../css/login_styles.css">
     <?php
         include("../php/header-head.php");
@@ -9,15 +13,19 @@
     <title>Login</title>
 </head>
 <body>
+
+<!-- Loads the header onto the page from the php file -->
 <?php
     include("../php/header.php");
 ?>
 
+<!-- Sets the text to the currently logged in user's username -->
 <h1>Login - Currently <?php echo $_SESSION['username'];?> Logged In</h1>
 
 <hr>
 <br>
 
+<!-- Creates a form for the login data and links it to the login.php file -->
 <form action="../php/login.php" method="POST">
     <div class="loginText">Username:</div>
     <label>
@@ -32,10 +40,12 @@
     <input type="submit">
 </form>
 
+<!-- Creates a form for logout and links it to the logout.php file -->
 <form action="../php/logout.php" method="POST">
     <input type="submit" name="logout" value="Log out">
 </form>
 
+<!-- Displays the footer from the php file -->
 <?php
     include("../php/footer.php");
 ?>

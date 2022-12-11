@@ -1,7 +1,11 @@
+<!-- cv.html is a file to display the CV -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Import css for formatting and php for the header -->
     <link rel="stylesheet" type="text/css" href="../css/cv_styles.css">
     <?php
         include("../php/header-head.php");
@@ -9,12 +13,16 @@
     <title>CV</title>
 </head>
 <body>
+
+<!-- Loads the header onto the page from the php file -->
 <?php
     include("../php/header.php");
 ?>
 
+<!-- Splits the page to not interfere with the content on the right -->
 <div class="split">
     <br>
+    <!-- Displays the information and styles the border -->
     <div style="display:inline-block;vertical-align:top;">
         <img class="imgAnim" src="../images/Profile-Picture.jpg" alt="Profile Picture" style="float: left;height: 100px; width: 100px;">
     </div>
@@ -23,6 +31,8 @@
     </div>
     <hr>
 
+    <!-- Creates and displays the information for the cv -->
+    <!-- It puts it in boxes, styles and animates them -->
     <div style="display:inline-block;vertical-align:top;">
         <p class="infoBoxes">
         <p.style1 style="font-size: 30px; font-weight: bold;">Computer Science Skills</p.style1>
@@ -53,6 +63,7 @@
     <div style="display:inline-block;vertical-align:top;">
         <p class="infoBoxes">
             <p.style1 style="font-size: 30px; font-weight: bold;">Modules</p.style1>
+            <!-- Hyperlinks for the modules -->
             <br><a href="https://www.keele.ac.uk/catalogue/2021-22/csc-20043.htm" style="color: #f3f0d1">CSC-20043 - Computational and Artificial Intelligence I</a>
             <br><a href="https://www.keele.ac.uk/catalogue/2021-22/csc-20038.htm" style="color: #f3f0d1">CSC-20038 - Mobile Application Development</a>
             <br><a href="https://www.keele.ac.uk/catalogue/2021-22/csc-20037.htm" style="color: #f3f0d1">CSC-20037 - Programming II - Data Structures and Algorithm</a>
@@ -74,6 +85,7 @@
     </div>
 </div>
 
+<!-- Displays the footer from the php file -->
 <?php
     include("../php/footer.php");
 ?>

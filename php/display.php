@@ -1,3 +1,5 @@
+<!-- display.php is a file to display a single record that the user chooses -->
+
 <?php
 
 $selectFile = fopen("../csv/publications.csv", "r");
@@ -5,7 +7,9 @@ $selectFile = fopen("../csv/publications.csv", "r");
 echo '<form id="Record" method="post">';
 echo '<select name="selectRecord">';
 
+// Reads the csv file into a variable
 $data = fgetcsv($selectFile);
+
 while (($data = fgetcsv($selectFile)) !== FALSE) {
     echo '<option value=' . $data[0] . '>' . $data[0] . '</option>';
 }
@@ -14,6 +18,7 @@ echo '<input type="submit" name="Submit" value="Submit">';
 echo '</form>';
 echo "<br><br>";
 
+// Gets the record from the user
 if(isset($_POST['selectRecord'])) {
     $result = $_POST['selectRecord'];
 }
@@ -21,13 +26,13 @@ if(isset($_POST['selectRecord'])) {
 
 $file = file("../csv/publications.csv");
 
-
+// Gets the record id from the url
 if (empty($_GET)) {
     $result = $_POST['selectRecord'];
-} else {
+}else {
     $result = $_GET['data'];
 
-
+    // Gets the first record from the csv file and displays it
     $getTable = (string)($file[0]);
     $listTable = explode(",", $getTable);
 
@@ -42,6 +47,7 @@ if (empty($_GET)) {
     echo "</tr>";
 }
 
+// Gets the requested record from the csv file and displays it
 $rawFileData = (string)($file[$result + 1]);
 $data = explode(",", $rawFileData);
 

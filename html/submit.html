@@ -1,7 +1,11 @@
+<!-- submit.html is a file that allows admins to submit new publications -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Import css for formatting and php for the header -->
     <link rel="stylesheet" type="text/css" href="../css/publication_styles.css">
     <?php
         include("../php/header-head.php");
@@ -9,6 +13,9 @@
     <title>Submit</title>
 </head>
 <body>
+
+<!-- Loads the header onto the page from the php file -->
+<!-- Loads the submit.php file onto the page so the code can be used -->
 <?php
     include("../php/header.php");
     include("../php/submit.php");
@@ -21,57 +28,85 @@
 
 <h2>Submit Form:</h2>
 
+<!-- Sets the div class so all the content inside it is padded -->
 <div class="paddedDiv">
+
+    <!-- Creates a form to enter new records -->
+    <!-- When submitted, it sends the data to the php code -->
     <form method="post" action='?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>'>
+
+        <!-- Sets the text to error to inform the user -->
         <p><span class="error">*All Fields Required</span></p>
         Title: <label>
         <br>
+
+            <!-- Displays the name that has been inputted -->
             <input type="text" name="name" value="<?php echo $name;?>">
+
+            <!-- Displays the error if there is one -->
             <span class="error">* <?php echo $nameErr;?></span>
         </label><br><br>
         Authors: <label>
         <br>
+
+            <!-- Displays the author that has been inputted -->
             <input type="text" name="authors" value="<?php echo $authors;?>">
+
+            <!-- Displays the error if there is one -->
             <span class="error">* <?php echo $authorsErr;?></span>
         </label><br><br>
         Year: <label>
         <br>
+
+            <!-- Displays the year that has been inputted -->
             <input type="text" name="year" value="<?php echo $year;?>">
+
+            <!-- Displays the error if there is one -->
             <span class="error">* <?php echo $yearErr;?></span>
         </label><br><br>
         Journal: <label>
         <br>
+
+            <!-- Displays the journal that has been inputted -->
             <input type="text" name="journal" value="<?php echo $journal;?>">
+
+            <!-- Displays the error if there is one -->
             <span class="error">* <?php echo $journalErr;?></span>
         </label><br><br>
         Digital Object Identifier (DOI): <label>
         <br>
+
+            <!-- Displays the doi that has been inputted -->
             <input type="text" name="doi" value="<?php echo $doi;?>">
+
+            <!-- Displays the error if there is one -->
             <span class="error">* <?php echo $doiErr;?></span>
         </label><br><br>
         School Name: <label>
         <br>
+
+            <!-- Displays the school name that has been inputted -->
             <input type="text" name="schoolName" value="<?php echo $schoolName;?>">
+
+            <!-- Displays the error if there is one -->
             <span class="error">* <?php echo $schoolNameErr;?></span>
         </label><br><br><br>
 
         <input type="submit">
     </form>
     <br>
+
+    <!-- Displays the output message -->
     <?php
     echo $userOutput;
     ?>
 </div>
 
+<!-- Displays the footer -->
 <div class="footerRel">
     <p style="text-align: right; padding-right: 10px">Contact:<br>
         Email: someone@example.com<br>
         Phone: +44 1632 960550<br>
-        <!--        Fax: +44-208-1234567<br>-->
-        <!--        BBM Pin: 7AFC1E30<br>-->
-        <!--        Latitude: +34.5597880943659<br>-->
-        <!--        Longitude: +69.21103477189384<br>-->
-        <!--        Skype: love.xampp-->
     </p>
     <p>2022 ©</p>
 </div>

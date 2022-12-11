@@ -1,8 +1,12 @@
+/* login_styles.css is the style sheet for login.html */
+
+/* Initialises the custom font */
 @font-face {
     font-family: Titillium;
     src: url("../fonts/TitilliumWeb-Regular.ttf");
 }
 
+/* Sets styles for the body */
 body {
     font-size: 15px;
     font-weight: bold;
@@ -12,11 +16,13 @@ body {
     color: #f3f0d1
 }
 
+/* Sets styles for h1 tag */
 h1 {
     font-family: Titillium, serif;
     font-size: 30px;
 }
 
+/* Creates and styles a class for login info */
 .loginText {
     font-size: 20px;
 }

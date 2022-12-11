@@ -1,7 +1,11 @@
+<!-- display.html is a file to display single publications -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Import css for formatting and php for the header -->
     <link rel="stylesheet" type="text/css" href="../css/publication_styles.css">
     <?php
     include("../php/header-head.php");
@@ -9,9 +13,13 @@
     <title>Display</title>
 </head>
 <body>
+
+<!-- Loads the header onto the page from the php file -->
 <?php
 include("../php/header.php");
 ?>
+
+<!-- Sets the div class so all the content inside it is padded -->
 <div class="paddedDiv">
     <h1>Display</h1>
 
@@ -19,6 +27,7 @@ include("../php/header.php");
     <br>
     <h3>Select Record:</h3>
 
+    <!-- Loads the record in a graph onto the screen -->
     <div id="publicationGraph">
         <table>
             <?php include("../php/display.php");?>
@@ -26,15 +35,11 @@ include("../php/header.php");
     </div>
 </div>
 
+<!-- Displays the footer -->
 <div class="footerRel">
     <p style="text-align: right; padding-right: 10px">Contact:<br>
         Email: someone@example.com<br>
         Phone: +44 1632 960550<br>
-        <!--        Fax: +44-208-1234567<br>-->
-        <!--        BBM Pin: 7AFC1E30<br>-->
-        <!--        Latitude: +34.5597880943659<br>-->
-        <!--        Longitude: +69.21103477189384<br>-->
-        <!--        Skype: love.xampp-->
     </p>
     <p>2022 ©</p>
 </div>

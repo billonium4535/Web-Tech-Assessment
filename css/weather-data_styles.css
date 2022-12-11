@@ -1,3 +1,6 @@
+/* weather-data_styles.css is the style sheet for weather-data.html */
+
+/* Creates and styles a class for charts */
 .chartContainer {
     border-radius: 8px;
     background: #ffffff;
@@ -9,15 +12,18 @@
     position: relative;
 }
 
+/* Sets the default width and height of the canvas */
 canvas {
     width: 1000px !important;
     height: 400px !important;
 }
 
+/* Sets styles for a new p.style1 tag */
 p.style1 {
     font-size: 9px;
 }
 
+/* Sets styles for the body */
 body {
     font-size: 15px;
     font-weight: bold;
@@ -27,6 +33,7 @@ body {
     color: #f3f0d1
 }
 
+/* Sets styles for h1 tag */
 h1 {
     font-family: Titillium, serif;
     font-size: 30px;
