@@ -1,10 +1,5 @@
 # Web-Tech-Assessment
 
-## Progress
-| Task               | Try to Complete in | Current Status | To Do          |
-|--------------------|--------------------|----------------|----------------|
-| Finish display.php | Today              | Doing          | Do it          |
-
 ## To Do:
 - 1.1
     - [x] Nav bar
@@ -30,6 +25,6 @@
     - 1.3.2 (list.php)
         - [x] List the records
     - 1.3.3 (display.php)
-        - [ ] Display one record
+        - [x] Display one record
 - 2.1
     - [ ] Tech Report
